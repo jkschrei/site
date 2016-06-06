@@ -46,6 +46,7 @@
 }
 
 .page-title {
+  @apply(--paper-font-display2);
   outline: none;
 }
 
@@ -139,23 +140,23 @@ a{
 
           <span class="space"></span>
           
-          <div class="middle middle-container center horizontal layout">
+          <div class="middle middle-container">
             <div class="app-name">Computer Science Club</div>
           </div>
 
-          <div class="bottom bottom-container center horizonal layout">
-            <div class="bottom-title paper-font-subhead">Electronics, Programming and CAD Design For Everyone</div>
+          <div class="bottom bottom-container">
+            <div class="bottom-title">Electronics, Programming and CAD Design For Everyone</div>
           </div>
           <span class="space"></span>
         </paper-toolbar>
 
         <div class="content">
           <iron-pages attr-for-selected="data-route" selected="{{route}}">
-            <section data-route="home">
+            <section data-route="home" tabindex'"-1">
                 
                <paper-material>
                		<h1 class="page-title">Updates</h1>
-                    <h4>This is where </h4>
+                    <h4>You can see what we are up to here and we'll keep you up to date with information on the club.</h4>
                		<paper-card>
                     	<paper-ripple>
                     	</paper-ripple>
