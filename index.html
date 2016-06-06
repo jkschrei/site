@@ -1,4 +1,43 @@
-<!doctype html><html lang="en"><head><script>'https:'!==window.location.protocol&&(window.location.protocol='https')</script><meta charset="utf-8"><meta name="description" content=""><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Computer Science Club"><title>Computer Science Club</title><meta name="theme-color" content="#2E3AA1"><link rel="manifest" href="manifest.json"><meta name="msapplication-TileColor" content="#3372DF"><meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="PSK"><link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="apple-mobile-web-app-title" content="Polymer Starter Kit"><link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png"><meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png"><link rel="stylesheet" href="styles/main.css"><script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script><link rel="import" href="elements/elements.html"><style is="custom-style" include="shared-styles">
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <script>'https:'!==window.location.protocol&&(window.location.protocol='https')</script>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Computer Science Club">
+  <title>Computer Science Club</title>
+
+  <!--Address Bar Color Theme-->
+  <meta name="theme-color" content="#2E3AA1">
+  
+  <!--Manifest Link-->
+  <link rel="manifest" href="manifest.json">
+
+  <!--Windows Tile Color Theme-->
+  <meta name="msapplication-TileColor" content="#3372DF">
+
+  <!--Android Add to Homescreen-->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="PSK">
+  <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+  <!--iOS App Icon-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Polymer Starter Kit">
+  <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+  <!--Windows Tile Icon-->
+  <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+  <link rel="import" href="elements/elements.html">
+  
+  <style is="custom-style" include="shared-styles">
   
   body {
   background: #fafafa;
@@ -40,10 +79,228 @@ a{
 	--paper-tabs-selection-bar-color:#4A79CC;
 	width: auto;
 	}
-  </style></head><body unresolved=""><span id="browser-sync-binding"></span><template is="dom-bind" id="app"><paper-drawer-panel id="paperDrawerPanel"><paper-scroll-header-panel drawer="" fixed=""><paper-toolbar id="drawerToolbar"><div><app-logo class="horizontal layout center style-scope app-logo"><img src="images/touch/icon-512x512.png" width="36" alt="CSC Logo" class="style-scope app-logo"></app-logo></div><span class="title">CSC</span><paper-ripple></paper-ripple></paper-toolbar><paper-menu attr-for-selected="data-route" selected="[[route]]"><a data-route="home" href="{{baseUrl}}"><iron-icon icon="home"></iron-icon><span>Home</span><paper-ripple></paper-ripple></a> <a data-route="download" href="{{baseUrl}}download"><iron-icon icon="file-download"></iron-icon><span>Downloads</span><paper-ripple></paper-ripple></a> <a data-route="contact" href="{{baseUrl}}contact"><iron-icon icon="mail"></iron-icon><span>Contact Us</span><paper-ripple></paper-ripple></a> <a data-route="about" href="{{baseUrl}}about"><iron-icon icon="info-outline"></iron-icon><span>About Us</span><paper-ripple></paper-ripple></a></paper-menu></paper-scroll-header-panel><paper-scroll-header-panel main="" id="headerPanelMain"><paper-toolbar id="mainToolbar" class="tall"><paper-icon-button id="paperToggle" icon="menu" paper-drawer-toggle=""></paper-icon-button><span class="space"></span><div class="middle middle-container"><div class="app-name">Computer Science Club</div></div><div class="bottom bottom-container"><div class="bottom-title">Electronics, Programming and CAD Design For Everyone</div></div><span class="space"></span></paper-toolbar><div class="content"><iron-pages attr-for-selected="data-route" selected="{{route}}"><section data-route="home" tabindex="-1"><paper-material><h1 class="page-title">Updates</h1><h4>This is where</h4><paper-card><paper-ripple></paper-ripple><div class="card-content"><h2>Welcome</h2><h4>June 4, Saturday</h4><p>You've found us! This is where our home truly lays. You can find the presentations I give every week in the downloads section. You can also find out who we are and what our skills look like. We'll be posting stuff here regularly so check it out when you can!</p></div></paper-card></paper-material></section><section data-route="download" tabindex="-1"><paper-material><h1 class="page-title">Downloads</h1><h4>You can find starter files and anything you need here.</h4><paper-tabs id="downloads" selected="{{selected}}" noink=""><paper-tab><paper-ripple></paper-ripple>Powerpoints</paper-tab><paper-tab><paper-ripple></paper-ripple>3D Models</paper-tab><paper-tab><paper-ripple></paper-ripple>Code</paper-tab></paper-tabs><iron-pages selected="{{selected}}"><div><paper-card image="images/members/me.jpg"><div class="card-content"><h1>Introduction to Club</h1><p>Everything You Need to Know In Order To Get Serious About This Club</p></div><div class="card-actions"><a href="https://onedrive.live.com/redir?resid=916D705154BF48D3!2988&authkey=!AIUS10LPOnnacGg&ithint=file%2cpptx"><paper-button style="color:#3B4CCB">Download</paper-button></a></div></paper-card></div><div><paper-card image="images/members/sean.jpg"><div class="card-content"><h1>1. A Plane</h1><p>Everything You Need to Know In Order To Get Serious About This Club</p></div><div class="card-actions"><a href="https://onedrive.live.com/redir?resid=916D705154BF48D3!2988&authkey=!AIUS10LPOnnacGg&ithint=file%2cpptx"><paper-button style="color:#3B4CCB">Download</paper-button></a></div></paper-card></div><div><paper-card image="images/members/me.jpg"><div class="card-content"><h1>1. Hello World</h1><p>Everything You Need to Know In Order To Get Serious About This Club</p></div><div class="card-actions"><a href="https://onedrive.live.com/redir?resid=916D705154BF48D3!2988&authkey=!AIUS10LPOnnacGg&ithint=file%2cpptx"><paper-button style="color:#3B4CCB">Download</paper-button></a></div></paper-card></div></iron-pages></paper-material><script>
+  </style>
+</head>
+
+<body unresolved>
+  <span id="browser-sync-binding"></span>
+  <!-- endbuild -->
+
+  <template is="dom-bind" id="app">
+
+    <paper-drawer-panel id="paperDrawerPanel">
+      <!-- Drawer Scroll Header Panel -->
+      <paper-scroll-header-panel drawer fixed>
+
+        <!-- Drawer Toolbar -->
+        <paper-toolbar id="drawerToolbar">
+          <div>
+          	<app-logo class="horizontal layout center style-scope app-logo">
+      				<img src="images/touch/icon-512x512.png" width="36" alt="CSC Logo" class="style-scope app-logo">
+  			</app-logo>
+          </div>
+          <span class="title">CSC</span>
+          <paper-ripple></paper-ripple>
+        </paper-toolbar>
+
+        <paper-menu attr-for-selected="data-route" selected="[[route]]">
+        
+          <a data-route="home" href="{{baseUrl}}">
+            <iron-icon icon="home"></iron-icon>
+            <span>Home</span>
+            <paper-ripple></paper-ripple>
+          </a>
+
+          <a data-route="download" href="{{baseUrl}}download">
+            <iron-icon icon="file-download"></iron-icon>
+            <span>Downloads</span>
+            <paper-ripple></paper-ripple>
+          </a>
+          
+          <a data-route="contact" href="{{baseUrl}}contact">
+ 			<iron-icon icon="mail"></iron-icon>
+  			<span>Contact Us</span>
+            <paper-ripple></paper-ripple>
+          </a>
+          
+          <a data-route="about" href="{{baseUrl}}about">
+            <iron-icon icon="info-outline"></iron-icon>
+            <span>About Us</span>
+            <paper-ripple></paper-ripple>
+          </a>
+          
+        </paper-menu>
+      </paper-scroll-header-panel>
+
+      <paper-scroll-header-panel main id="headerPanelMain">
+      
+        <paper-toolbar id="mainToolbar" class="tall" >
+          <paper-icon-button id="paperToggle" icon="menu" paper-drawer-toggle></paper-icon-button>
+
+          <span class="space"></span>
+          
+          <div class="middle middle-container">
+            <div class="app-name">Computer Science Club</div>
+          </div>
+
+          <div class="bottom bottom-container">
+            <div class="bottom-title">Electronics, Programming and CAD Design For Everyone</div>
+          </div>
+          <span class="space"></span>
+        </paper-toolbar>
+
+        <div class="content">
+          <iron-pages attr-for-selected="data-route" selected="{{route}}">
+            <section data-route="home" tabindex="-1">
+                
+               <paper-material>
+               		<h1 class="page-title">Updates</h1>
+                    <h4>This is where </h4>
+               		<paper-card>
+                    	<paper-ripple>
+                    	</paper-ripple>
+               			<div class="card-content">
+               	<h2>Welcome</h2>
+                <h4>June 4, Saturday</h4>
+                <p>You've found us! This is where our home truly lays. You can find the presentations I give every week in the downloads section. You can also find out who we are and what our skills look like. We'll be posting stuff here regularly so check it out when you can!</p>
+                		</div>
+                	</paper-card>
+              </paper-material>
+            </section>
+            
+            <section data-route="download" tabindex="-1">
+            
+            <paper-material>
+            <h1 class="page-title">Downloads</h1>
+            <h4>You can find starter files and anything you need here.</h4>
+            	<paper-tabs id="downloads"selected="{{selected}}" noink>
+            		<paper-tab><paper-ripple></paper-ripple>Powerpoints</paper-tab>
+                	<paper-tab><paper-ripple></paper-ripple>3D Models</paper-tab>
+                	<paper-tab><paper-ripple></paper-ripple>Code</paper-tab>
+            	</paper-tabs>
+                
+            		<iron-pages selected="{{selected}}">
+            		 	<div>
+            				<paper-card image="images/members/me.jpg">
+  								<div class="card-content">
+                					<h1>Introduction to Club</h1>
+                						<p>Everything You Need to Know In Order To Get Serious About This Club
+                						</p>
+                				</div>
+                
+  								<div class="card-actions">
+    								<a href="https://onedrive.live.com/redir?resid=916D705154BF48D3!2988&authkey=!AIUS10LPOnnacGg&ithint=file%2cpptx">
+                    					<paper-button style="color:#3B4CCB">Download</paper-button>
+                    				</a>
+  								</div>
+							</paper-card>
+            			</div>
+                        
+                        <div>
+            				<paper-card image="images/members/sean.jpg">
+  								<div class="card-content">
+                					<h1>1. A Plane</h1>
+                						<p>Everything You Need to Know In Order To Get Serious About This Club
+                						</p>
+                				</div>
+                
+  								<div class="card-actions">
+    								<a href="https://onedrive.live.com/redir?resid=916D705154BF48D3!2988&authkey=!AIUS10LPOnnacGg&ithint=file%2cpptx">
+                    					<paper-button style="color:#3B4CCB">Download</paper-button>
+                    				</a>
+  								</div>
+							</paper-card>
+            			</div>
+                        
+                        <div>
+            				<paper-card image="images/members/me.jpg">
+  								<div class="card-content">
+                					<h1>1. Hello World</h1>
+                						<p>Everything You Need to Know In Order To Get Serious About This Club
+                						</p>
+                				</div>
+                
+  								<div class="card-actions">
+    								<a href="https://onedrive.live.com/redir?resid=916D705154BF48D3!2988&authkey=!AIUS10LPOnnacGg&ithint=file%2cpptx">
+                    					<paper-button style="color:#3B4CCB">Download</paper-button>
+                    				</a>
+  								</div>
+							</paper-card>
+            			</div>
+                        
+            		</iron-pages>
+			</paper-material>
+            
+            <script>
             var items = document.querySelector('paper-tabs');
             var pages = document.querySelector('div');
             items.addEventListener('iron-select', function(){
                 pages.selected = items.selected;
             });
-        </script></section><section data-route="about" tabindex="-1"><paper-material><h1 class="page-title">About Us</h1><h4>This is where you can find out more about us and our passions. If you scroll down far enough, you'll even find that you can even tell us more about yourself!</h4><paper-card image="images/members/me.jpg"><paper-ripple></paper-ripple><paper-toolbar class="medium-tall"><h2>Jaron Schreiber</h2><div class="bottom bottom-container"><div class="bottom-title">3D Modeller, Programmer and Visual Effects Artist</div></div></paper-toolbar><div class="card-content"><h3>Where are you from?</h3><p>California, quite close to Apple Inc. Headquarters</p><h3>What do you do in your free time?</h3><p>I'm either doing what I love or AP homework.</p><h3></h3></div></paper-card><paper-card class="sean" image="images/members/sean.jpg"><paper-ripple></paper-ripple><paper-toolbar class="medium-tall"><h2>Sean Bocirnea</h2><div class="bottom bottom-container"><div class="bottom-title">Sean Decides</div></div></paper-toolbar><div class="card-content"><h3>Where are you from?</h3><p>Canadia</p><h3>What do you do in your free time?</h3><p>Sean Decides</p><h3></h3></div></paper-card></paper-material></section><section data-route="books"><paper-material elevation="1"><p>Hello, World!</p></paper-material></section></iron-pages></div></paper-scroll-header-panel></paper-drawer-panel><paper-toast id="toast"><span class="toast-hide-button" role="button" tabindex="0" onclick="app.$.toast.hide()">Ok</span></paper-toast></template><script src="scripts/app.js"></script></body></html>
+        </script>
+            </section>
+            
+            
+
+            <section data-route="about" tabindex="-1">
+              <paper-material>
+              </paper-ripple>
+                <h1 class="page-title">About Us</h1>
+                <h4>This is where you can find out more about us and our passions. If you scroll down far enough, you'll even find that you can even tell us more about yourself!</h4>
+
+              <paper-card image="images/members/me.jpg">
+              <paper-ripple>
+              </paper-ripple>
+              <paper-toolbar class="medium-tall">
+              <h2>Jaron Schreiber</h2>
+              <div class="bottom bottom-container">
+            <div class="bottom-title">3D Modeller, Programmer and Visual Effects Artist</div>
+          </div>
+                </paper-toolbar>
+                <div class="card-content">
+                	<h3>Where are you from?</h3>
+                    	<p>California, quite close to Apple Inc. Headquarters</p>
+                    <h3>What do you do in your free time?</h3>
+                    	<p>I'm either doing what I love or AP homework.</p>
+                    <h3></h3>
+                </div>
+              </paper-card>
+              
+                <paper-card class="sean" image="images/members/sean.jpg">
+                <paper-ripple></paper-ripple>
+              <paper-toolbar class="medium-tall">
+              <h2>Sean Bocirnea</h2>
+              <div class="bottom bottom-container">
+            <div class="bottom-title">Sean Decides</div>
+          </div>
+                </paper-toolbar>
+                <div class="card-content">
+                	<h3>Where are you from?</h3>
+                    	<p>Canadia</p>
+                    <h3>What do you do in your free time?</h3>
+                    	<p>Sean Decides</p>
+                    <h3></h3>
+                </div>
+              </paper-card>
+             </paper-material>
+            </section>
+            
+            <section data-route="books">
+  				<paper-material elevation="1">
+    				<p>Hello, World!</p>
+  				</paper-material>
+			</section>
+            
+        </div>
+      </paper-scroll-header-panel>
+    </paper-drawer-panel>
+
+    <paper-toast id="toast">
+      <span class="toast-hide-button" role="button" tabindex="0" onclick="app.$.toast.hide()">Ok</span>
+    </paper-toast>
+
+  </template>
+  <script src="scripts/app.js"></script>
+</body>
+
+</html>
