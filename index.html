@@ -95,16 +95,15 @@ a{
 
         <!-- Drawer Toolbar -->
         <paper-toolbar id="drawerToolbar">
-          <div>
+          <span>
           	<app-logo class="horizontal layout center style-scope app-logo">
       				<img src="images/touch/icon-512x512.png" width="36" alt="CSC Logo" class="style-scope app-logo">
   			</app-logo>
-          </div>
+          </span>
           <span class="title">CSC</span>
-          <paper-ripple></paper-ripple>
         </paper-toolbar>
 
-        <paper-menu attr-for-selected="data-route" selected="[[route]]">
+        <paper-menu class="app-menu" attr-for-selected="data-route" selected="[[route]]">
         
           <a data-route="home" href="{{baseUrl}}">
             <iron-icon icon="home"></iron-icon>
@@ -133,37 +132,21 @@ a{
         </paper-menu>
       </paper-scroll-header-panel>
 
-      <div id ="headerContainer" class="style-scope paper-scroll-header-panel" style="transform: translate3d(0px 0px 0px);"> == $0
-      <div class="bg-container style-scope paper-scroll-header-panel">
-        <div id="condensedHeaderBg" class="style-scope paper-scroll-header-panel" style="opacity: 0; transform: translate3d(0px, 0px, 0px);"></div>
-        <div id="headerBg" class="style-scope paper-scroll-header-panel" style="opacity: 1; transform: translate3d(0px, 0px, 0px);"></div>
-      </div>
-      
-        <paper-toolbar id="mainToolbar" class="tall x-scope paper-toolbar-0" role="toolbar"> ==$0
-        	<div id="topBar" class="toolbar-tools style-scope-paper-toolbar" style="transform: translate3d(0px, 112px, 0px);"> ==$0
-          		<paper-icon-button id="paperToggle" icon="menu" paper-drawer-toggle></paper-icon-button>
-          		<span class="space"></span>
-          	</div>
-          <div id="middleBar" class="toolbar-tools  style-scope paper-toolbar">
-      <div class="middle middle-container" style="transform: translate3d(0px, 100%, 0px);"><div class="app-name" style="transform: scale(0.5) translateZ(0px);">Polymer Starter Kit</div></div>
-    	  </div>
-    <div id="bottomBar" class="toolbar-tools  style-scope paper-toolbar">
-      <div class="bottom bottom-container" style="transform: scale(0) translateZ(0px);"><div class="bottom-title">The future of the web today</div></div>
-    </div>
-    	</paper-toolbar>
-    </div>
-    </paper-scroll-header-panel>
+      <paper-scroll-header-panel main id="headerPanelMain" condenses keep-condensed-header>
+      	<paper-toolbar id="mainToolbar" class="tall">
+          <paper-icon-button id="paperToggle" icon="menu" paper-drawer-toggle></paper-icon-button>
 
-          
-          
-          <div class="middle middle-container">
-            <div class="app-name">Computer Science Club</div>
-          </div>
-
-          <div class="bottom bottom-container">
-            <div class="bottom-title">Electronics, Programming and CAD Design For Everyone</div>
-          </div>
           <span class="space"></span>
+
+          <!-- Application name -->
+          <div class="middle middle-container">
+            <div class="app-name">Polymer Starter Kit</div>
+          </div>
+
+          <!-- Application sub title -->
+          <div class="bottom bottom-container">
+            <div class="bottom-title">The future of the web today</div>
+          </div>
         </paper-toolbar>
 
         <div class="content">
