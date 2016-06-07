@@ -133,12 +133,28 @@ a{
         </paper-menu>
       </paper-scroll-header-panel>
 
-      <paper-scroll-header-panel mode="tall" main id="headerPanelMain">
+      <div id ="headerContainer" class="style-scope paper-scroll-header-panel" style="transform: translate3d(0px 0px 0px);"> == $0
+      <div class="bg-container style-scope paper-scroll-header-panel">
+        <div id="condensedHeaderBg" class="style-scope paper-scroll-header-panel" style="opacity: 0; transform: translate3d(0px, 0px, 0px);"></div>
+        <div id="headerBg" class="style-scope paper-scroll-header-panel" style="opacity: 1; transform: translate3d(0px, 0px, 0px);"></div>
+      </div>
       
-        <paper-toolbar id="mainToolbar" class="tall" >
-          <paper-icon-button id="paperToggle" icon="menu" paper-drawer-toggle></paper-icon-button>
+        <paper-toolbar id="mainToolbar" class="tall x-scope paper-toolbar-0" role="toolbar"> ==$0
+        	<div id="topBar" class="toolbar-tools style-scope-paper-toolbar" style="transform: translate3d(0px, 112px, 0px);"> ==$0
+          		<paper-icon-button id="paperToggle" icon="menu" paper-drawer-toggle></paper-icon-button>
+          		<span class="space"></span>
+          	</div>
+          <div id="middleBar" class="toolbar-tools  style-scope paper-toolbar">
+      <div class="middle middle-container" style="transform: translate3d(0px, 100%, 0px);"><div class="app-name" style="transform: scale(0.5) translateZ(0px);">Polymer Starter Kit</div></div>
+    	  </div>
+    <div id="bottomBar" class="toolbar-tools  style-scope paper-toolbar">
+      <div class="bottom bottom-container" style="transform: scale(0) translateZ(0px);"><div class="bottom-title">The future of the web today</div></div>
+    </div>
+    	</paper-toolbar>
+    </div>
+    </paper-scroll-header-panel>
 
-          <span class="space"></span>
+          
           
           <div class="middle middle-container">
             <div class="app-name">Computer Science Club</div>
